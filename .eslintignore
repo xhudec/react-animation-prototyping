@@ -1,0 +1,16 @@
+# Generated
+.next
+.husky
+
+# Hygen templates
+_templates
+
+# Custom node scripts
+config
+scripts
+
+public
+
+.eslintrc.js
+next.config.js
+
