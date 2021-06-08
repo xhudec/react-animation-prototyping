@@ -6,13 +6,10 @@ const PageContainer = styled.div`
 
 const PageContent = styled.main`
   min-height: 100%;
-  scroll-snap-type: y mandatory;
 `
 
 const SectionBlock = styled.section`
   min-height: 100vh;
-
-  scroll-snap-align: start;
 `
 
 const BannerSection = styled(SectionBlock)`
