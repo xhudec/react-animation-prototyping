@@ -5,6 +5,7 @@
       "@api/*": ["api/*"],
       "@components/*": ["components/*"],
       "@config/*": ["config/*"],
+      "@hooks/*": ["hooks/*"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/*"],
     },

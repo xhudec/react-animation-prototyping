@@ -2,6 +2,7 @@ import { FC } from 'react'
 import Head from 'next/head'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 
+import Circle from '@components/circle'
 import {
   BannerSection,
   Box,
@@ -15,8 +16,7 @@ import {
   PageContent,
   RelativeDemoSection,
 } from '@components/styled'
-import Circle from '@components/circle'
-import useLocomotiveScroll from 'hooks/use-locomotive-scroll'
+import useLocomotiveScroll from '@hooks/use-locomotive-scroll'
 import theme from '@styles/theme'
 
 const circles = [
