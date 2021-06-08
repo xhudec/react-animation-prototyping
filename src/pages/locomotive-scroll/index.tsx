@@ -13,6 +13,7 @@ import {
   Heading2,
   PageContainer,
   PageContent,
+  RelativeDemoSection,
 } from '@components/styled'
 import Circle from '@components/circle'
 import useLocomotiveScroll from 'hooks/use-locomotive-scroll'
@@ -113,7 +114,15 @@ const LocomotiveScrollPage: FC = () => {
           </Heading2>
         </DemoSection>
 
-        <DemoSection data-scroll-section />
+        <RelativeDemoSection data-scroll-section>
+          <Circle data-scroll data-scroll-speed="0" x={50} y={50} size={800} bgColor={theme.colors.gray[900]} />
+          <Circle data-scroll data-scroll-speed="1" x={50} y={50} size={700} bgColor={theme.colors.gray[700]} />
+          <Circle data-scroll data-scroll-speed="2" x={50} y={50} size={600} bgColor={theme.colors.gray[500]} />
+          <Circle data-scroll data-scroll-speed="3" x={50} y={50} size={500} bgColor={theme.colors.gray[300]} />
+          <Circle data-scroll data-scroll-speed="4" x={50} y={50} size={400} bgColor={theme.colors.gray[100]} />
+        </RelativeDemoSection>
+
+        <DemoSection />
       </PageContent>
     </PageContainer>
   )
