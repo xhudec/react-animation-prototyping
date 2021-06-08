@@ -35,8 +35,8 @@ export default function Circle({
   const mappedStyles = useMemo(
     () =>
       ({
-        '--offset-top': `${y}%`,
-        '--offset-left': `${x}%`,
+        '--offset-top': `calc(${y}% - ${size}px / 2)`,
+        '--offset-left': `calc(${x}% - ${size}px / 2)`,
         '--size': `${size}px`,
         '--bg-color': bgColor,
       } as CSSProperties),

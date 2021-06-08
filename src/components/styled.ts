@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import theme from '@styles/theme'
+
 const PageContainer = styled.div`
   min-height: 100%;
 `
@@ -15,8 +17,8 @@ const SectionBlock = styled.section`
 const BannerSection = styled(SectionBlock)`
   display: grid;
   place-items: center;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 0%, 0%);
+  color: ${theme.colors.white};
+  background-color: ${theme.colors.black};
 `
 
 const BannerContainer = styled.div`
@@ -34,6 +36,11 @@ const DemoSection = styled(SectionBlock)`
   grid-template-columns: 1fr 2fr;
   grid-gap: 32px;
   place-content: center;
+`
+
+const RelativeDemoSection = styled(DemoSection)`
+  display: block;
+  position: relative;
 `
 
 const DemoColumns = styled.div`
@@ -60,7 +67,7 @@ const Box = styled.div`
   min-height: 300px;
   width: 100%;
 
-  background-color: hsl(0, 0%, 25%);
+  background-color: ${theme.colors.gray[500]};
 `
 
 const Heading2 = styled.h2`
@@ -82,4 +89,5 @@ export {
   SecondColumn,
   Box,
   ParallaxContainer,
+  RelativeDemoSection,
 }
