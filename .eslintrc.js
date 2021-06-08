@@ -91,6 +91,7 @@ module.exports = {
     'valid-jsdoc': 'off',
     'no-nested-ternary': 'off',
     'no-undefined': 'off',
+    'no-unused-vars': 'off',
     'react/jsx-max-depth': 'off',
 
     /**
