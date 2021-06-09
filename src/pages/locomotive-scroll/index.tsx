@@ -90,18 +90,16 @@ const LocomotiveScrollPage: FC = () => {
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/667x305"
-                  layout="responsive"
-                  height="300"
-                  width="664"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
               <Box>
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/666x305"
-                  layout="responsive"
-                  height="300"
-                  width="664"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
             </FirstColumn>
@@ -111,18 +109,16 @@ const LocomotiveScrollPage: FC = () => {
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/664x301"
-                  layout="responsive"
-                  height="300"
-                  width="664"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
               <Box>
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/664x302"
-                  layout="responsive"
-                  height="300"
-                  width="664"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
               <Box>
@@ -142,18 +138,16 @@ const LocomotiveScrollPage: FC = () => {
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/330x300"
-                  layout="responsive"
-                  height="300"
-                  width="330"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
               <Box>
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/330x301"
-                  layout="responsive"
-                  height="300"
-                  width="330"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
             </FirstColumn>
@@ -163,18 +157,16 @@ const LocomotiveScrollPage: FC = () => {
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/330x302"
-                  layout="responsive"
-                  height="300"
-                  width="330"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
               <Box>
                 <NextImage
                   alt="puppy"
                   src="https://place-puppy.com/330x303"
-                  layout="responsive"
-                  height="300"
-                  width="330"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </Box>
               <Box>

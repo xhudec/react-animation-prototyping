@@ -64,7 +64,9 @@ const ParallaxContainer = styled.div`
 `
 
 const Box = styled.div`
+  position: relative;
   min-height: 300px;
+  max-height: 500px;
   width: 100%;
 `
 
