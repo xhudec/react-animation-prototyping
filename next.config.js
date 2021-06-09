@@ -6,4 +6,7 @@ module.exports = {
   env: {
     nonce,
   },
+  images: {
+    domains: ['place-puppy.com'],
+  },
 }

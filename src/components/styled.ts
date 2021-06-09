@@ -66,8 +66,6 @@ const ParallaxContainer = styled.div`
 const Box = styled.div`
   min-height: 300px;
   width: 100%;
-
-  background-color: ${theme.colors.gray[500]};
 `
 
 const Heading2 = styled.h2`
