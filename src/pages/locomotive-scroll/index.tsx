@@ -1,8 +1,10 @@
 import { FC } from 'react'
 import Head from 'next/head'
+import NextImage from 'next/image'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 
 import Circle from '@components/circle'
+import Video from '@components/video'
 import {
   BannerSection,
   Box,
@@ -81,15 +83,51 @@ const LocomotiveScrollPage: FC = () => {
 
           <DemoColumns>
             <FirstColumn data-scroll data-scroll-speed="8">
-              <Box />
-              <Box />
-              <Box />
+              <Box>
+                <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
+              </Box>
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/667x305"
+                  layout="responsive"
+                  height="300"
+                  width="664"
+                />
+              </Box>
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/666x305"
+                  layout="responsive"
+                  height="300"
+                  width="664"
+                />
+              </Box>
             </FirstColumn>
 
             <SecondColumn data-scroll data-scroll-speed="12">
-              <Box />
-              <Box />
-              <Box />
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/664x301"
+                  layout="responsive"
+                  height="300"
+                  width="664"
+                />
+              </Box>
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/664x302"
+                  layout="responsive"
+                  height="300"
+                  width="664"
+                />
+              </Box>
+              <Box>
+                <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" />
+              </Box>
             </SecondColumn>
           </DemoColumns>
         </DemoSection>
@@ -97,15 +135,51 @@ const LocomotiveScrollPage: FC = () => {
         <DemoSection data-scroll-section>
           <DemoColumns>
             <FirstColumn data-scroll data-scroll-speed="6">
-              <Box />
-              <Box />
-              <Box />
+              <Box>
+                <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" />
+              </Box>
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/330x300"
+                  layout="responsive"
+                  height="300"
+                  width="330"
+                />
+              </Box>
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/330x301"
+                  layout="responsive"
+                  height="300"
+                  width="330"
+                />
+              </Box>
             </FirstColumn>
 
             <SecondColumn data-scroll>
-              <Box />
-              <Box />
-              <Box />
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/330x302"
+                  layout="responsive"
+                  height="300"
+                  width="330"
+                />
+              </Box>
+              <Box>
+                <NextImage
+                  alt="puppy"
+                  src="https://place-puppy.com/330x303"
+                  layout="responsive"
+                  height="300"
+                  width="330"
+                />
+              </Box>
+              <Box>
+                <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" />
+              </Box>
             </SecondColumn>
           </DemoColumns>
 
@@ -115,11 +189,46 @@ const LocomotiveScrollPage: FC = () => {
         </DemoSection>
 
         <RelativeDemoSection data-scroll-section>
-          <Circle data-scroll data-scroll-speed="0" x={50} y={50} size={800} bgColor={theme.colors.gray[900]} />
-          <Circle data-scroll data-scroll-speed="1" x={50} y={50} size={700} bgColor={theme.colors.gray[700]} />
-          <Circle data-scroll data-scroll-speed="2" x={50} y={50} size={600} bgColor={theme.colors.gray[500]} />
-          <Circle data-scroll data-scroll-speed="3" x={50} y={50} size={500} bgColor={theme.colors.gray[300]} />
-          <Circle data-scroll data-scroll-speed="4" x={50} y={50} size={400} bgColor={theme.colors.gray[100]} />
+          <Circle
+            data-scroll
+            data-scroll-speed="0"
+            x={50}
+            y={50}
+            size={800}
+            bgColor={theme.colors.gray[900]}
+          />
+          <Circle
+            data-scroll
+            data-scroll-speed="1"
+            x={50}
+            y={50}
+            size={700}
+            bgColor={theme.colors.gray[700]}
+          />
+          <Circle
+            data-scroll
+            data-scroll-speed="2"
+            x={50}
+            y={50}
+            size={600}
+            bgColor={theme.colors.gray[500]}
+          />
+          <Circle
+            data-scroll
+            data-scroll-speed="3"
+            x={50}
+            y={50}
+            size={500}
+            bgColor={theme.colors.gray[300]}
+          />
+          <Circle
+            data-scroll
+            data-scroll-speed="4"
+            x={50}
+            y={50}
+            size={400}
+            bgColor={theme.colors.gray[100]}
+          />
         </RelativeDemoSection>
 
         <DemoSection />
