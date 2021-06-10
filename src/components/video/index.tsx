@@ -1,4 +1,8 @@
+import { useCallback, useRef } from 'react'
+
 import { VideoContainer } from './styled'
+
+import useVisibilityListener from '@hooks/use-visibility-listener'
 
 export interface IVideoProps {
   src: string
@@ -28,10 +32,28 @@ export default function Video({
   autoPlay = true,
   showControls = false,
 }: IVideoProps) {
+  const videoRef = useRef<HTMLVideoElement | null>(null)
+
+  const handleOnVisible = useCallback(() => {
+    videoRef.current?.play()
+  }, [])
+  const handleOnHidden = useCallback(() => {
+    videoRef.current?.pause()
+  }, [])
+
+  useVisibilityListener({ onVisible: handleOnVisible, onHidden: handleOnHidden })
+
   if (!src) return null
 
   return (
-    <VideoContainer muted={isMuted} autoPlay={autoPlay} controls={showControls} loop={isLooped}>
+    <VideoContainer
+      ref={videoRef}
+      muted={isMuted}
+      playsInline={autoPlay}
+      autoPlay={autoPlay}
+      controls={showControls}
+      loop={isLooped}
+    >
       <source type="video/mp4" src={src} />
     </VideoContainer>
   )

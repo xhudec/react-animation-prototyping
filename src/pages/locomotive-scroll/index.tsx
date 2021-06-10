@@ -5,6 +5,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css'
 
 import Circle from '@components/circle'
 import Video from '@components/video'
+import AnimatedImageSwap from '@components/animated-image-swap'
 import {
   BannerSection,
   Box,
@@ -34,6 +35,38 @@ const circles = [
   { x: 70, y: 80, size: 150, color: theme.colors.gray[700] },
   { x: 55, y: 55, size: 100, color: theme.colors.gray[700] },
   { x: 40, y: 85, size: 125, color: theme.colors.gray[700] },
+]
+
+const imgsChunk1 = [
+  'https://place-puppy.com/660x304',
+  'https://place-puppy.com/650x305',
+  'https://place-puppy.com/670x306',
+  'https://place-puppy.com/680x307',
+  'https://place-puppy.com/690x307',
+]
+
+const imgsChunk2 = [
+  'https://place-puppy.com/690x307',
+  'https://place-puppy.com/680x307',
+  'https://place-puppy.com/670x306',
+  'https://place-puppy.com/650x305',
+  'https://place-puppy.com/660x304',
+]
+
+const imgsChunk3 = [
+  'https://place-puppy.com/800x300',
+  'https://place-puppy.com/790x300',
+  'https://place-puppy.com/780x300',
+  'https://place-puppy.com/770x300',
+  'https://place-puppy.com/760x300',
+]
+
+const imgsChunk4 = [
+  'https://place-puppy.com/710x300',
+  'https://place-puppy.com/550x300',
+  'https://place-puppy.com/730x300',
+  'https://place-puppy.com/720x300',
+  'https://place-puppy.com/700x300',
 ]
 
 const LocomotiveScrollPage: FC = () => {
@@ -87,39 +120,19 @@ const LocomotiveScrollPage: FC = () => {
                 <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
               </Box>
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/667x305"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk1} swapDelay={5000} />
               </Box>
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/666x305"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk2} swapDelay={4333} />
               </Box>
             </FirstColumn>
 
             <SecondColumn data-scroll data-scroll-speed="12">
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/664x301"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk3} swapDelay={6333} />
               </Box>
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/664x302"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk4} swapDelay={7667} />
               </Box>
               <Box>
                 <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" />
