@@ -31,16 +31,21 @@ const Heading1 = styled.h1`
 `
 
 const DemoSection = styled(SectionBlock)`
-  margin: 128px 10%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 32px;
-  place-content: center;
+  margin: 32px 16px;
+
+  @media screen and (min-width: 768px) {
+    margin: 128px 10%;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 32px;
+    place-content: center;
+  }
 `
 
 const RelativeDemoSection = styled(DemoSection)`
   display: block;
   position: relative;
+  overflow: hidden;
 `
 
 const DemoColumns = styled.div`
