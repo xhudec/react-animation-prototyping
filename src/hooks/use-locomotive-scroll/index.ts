@@ -20,6 +20,8 @@ export default function useLocomotiveScroll() {
         locomotiveRef.current = new LocomotiveScroll({
           el: scrollContainer ?? null,
           smooth: true,
+          smartphone: { smooth: true },
+          tablet: { smooth: true },
         })
 
         setLocomotiveReady(true)
