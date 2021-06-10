@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import Head from 'next/head'
-import NextImage from 'next/image'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 
 import Circle from '@components/circle'
@@ -148,39 +147,19 @@ const LocomotiveScrollPage: FC = () => {
                 <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" />
               </Box>
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/330x300"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk1} swapDelay={5000} />
               </Box>
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/330x301"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk2} swapDelay={4333} />
               </Box>
             </FirstColumn>
 
             <SecondColumn data-scroll>
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/330x302"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk3} swapDelay={6333} />
               </Box>
               <Box>
-                <NextImage
-                  alt="puppy"
-                  src="https://place-puppy.com/330x303"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <AnimatedImageSwap imgSources={imgsChunk4} swapDelay={7667} />
               </Box>
               <Box>
                 <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" />
