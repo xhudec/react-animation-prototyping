@@ -5,6 +5,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css'
 import Circle from '@components/circle'
 import Video from '@components/video'
 import AnimatedImageSwap from '@components/animated-image-swap'
+import AnimatedCounter from '@components/animated-counter'
 import {
   BannerSection,
   Box,
@@ -32,7 +33,7 @@ const circles = [
   { x: 55, y: 15, size: 100, color: theme.colors.gray[500] },
   { x: 15, y: 85, size: 125, color: theme.colors.gray[500] },
   { x: 70, y: 80, size: 150, color: theme.colors.gray[700] },
-  { x: 55, y: 55, size: 100, color: theme.colors.gray[700] },
+  { x: 55, y: 75, size: 100, color: theme.colors.gray[700] },
   { x: 40, y: 85, size: 125, color: theme.colors.gray[700] },
 ]
 
@@ -81,9 +82,12 @@ const LocomotiveScrollPage: FC = () => {
 
       <PageContent ref={containerRef} data-scroll-container>
         <BannerSection data-scroll-section>
-          <Heading1 data-scroll data-scroll-speed="4">
-            Locomotive Scroll
-          </Heading1>
+          <div data-scroll-section>
+            <Heading1 data-scroll data-scroll-speed="4">
+              Locomotive Scroll
+            </Heading1>
+            <AnimatedCounter data-scroll data-scroll-speed="6" from={100} to={300} duration={3} />
+          </div>
           {circles.map((circle) => {
             const speed =
               circle.color === theme.colors.white
