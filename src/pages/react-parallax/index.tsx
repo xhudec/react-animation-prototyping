@@ -10,8 +10,7 @@ import {
   DemoSection,
   Heading2,
   DemoColumns,
-  FirstColumn,
-  SecondColumn,
+  Column,
   Box,
   ParallaxContainer,
 } from '@components/styled'
@@ -42,20 +41,20 @@ const HomePage: FC = () => {
             <DemoColumns>
               <ParallaxContainer>
                 <Parallax y={[100, -200]}>
-                  <FirstColumn>
+                  <Column>
                     <Box />
                     <Box />
                     <Box />
-                  </FirstColumn>
+                  </Column>
                 </Parallax>
               </ParallaxContainer>
               <ParallaxContainer>
                 <Parallax y={[50, -50]}>
-                  <SecondColumn>
+                  <Column>
                     <Box />
                     <Box />
                     <Box />
-                  </SecondColumn>
+                  </Column>
                 </Parallax>
               </ParallaxContainer>
             </DemoColumns>

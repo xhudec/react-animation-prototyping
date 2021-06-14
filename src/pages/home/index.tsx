@@ -19,13 +19,18 @@ const HomePage: FC = () => {
         <nav>
           <ul>
             <li>
-              <Link href="/react-parallax">
-                <a>React Parallax</a>
+              <Link href="/locomotive-scroll">
+                <a>Locomotive Scroll</a>
               </Link>
             </li>
             <li>
-              <Link href="/locomotive-scroll">
-                <a>Locomotive Scroll</a>
+              <Link href="/mission-template">
+                <a>Mission Template</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/react-parallax">
+                <a>React Parallax</a>
               </Link>
             </li>
           </ul>

@@ -3,7 +3,7 @@
 .husky
 
 # Hygen templates
-_templates
+.hygen
 
 # Custom node scripts
 config
