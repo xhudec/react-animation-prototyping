@@ -1,0 +1,207 @@
+{
+  "title": "Our mission",
+  "content": "Lorem ipsum",
+
+  "sections": [
+    {
+      "type": "counter-and-six-multimedia-layout",
+      "title": "Cute puppies and rabbits",
+      "count": 9000,
+      "content": "Lorem ipsum dolor sit amet.",
+
+      "multimedia": {
+        "columns": [
+          [
+            {
+              "type": "video",
+              "video": {
+                "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "description": "Bunny video"
+              }
+            },
+            {
+              "type": "image-swap",
+              "images": [
+                {
+                  "url": "https://place-puppy.com/660x304",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/650x305",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/670x306",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/680x307",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/690x307",
+                  "description": "Puppy"
+                }
+              ]
+            },
+            {
+              "type": "image-static",
+              "image": {
+                "url": "https://place-puppy.com/710x300",
+                "description": "Another happy puppy"
+              },
+              "details": {}
+            }
+          ],
+          [
+            {
+              "type": "image-static",
+              "image": {
+                "url": "https://place-puppy.com/710x300",
+                "description": "Another happy puppy"
+              },
+              "details": {}
+            },
+            {
+              "type": "image-swap",
+              "images": [
+                {
+                  "url": "https://place-puppy.com/660x304",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/650x305",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/670x306",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/680x307",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/690x307",
+                  "description": "Puppy"
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "video": {
+                "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "description": "Bunny video"
+              }
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "type": "center-text",
+      "title": "Did you know that puppies brings happiness?",
+      "content": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
+    },
+    {
+      "type": "counter-and-six-multimedia-layout",
+      "title": "Amazing title of second section",
+      "count": 5000,
+      "content": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+
+      "multimedia": {
+        "columns": [
+          [
+            {
+              "type": "video",
+              "video": {
+                "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "description": "Bunny video"
+              }
+            },
+            {
+              "type": "image-swap",
+              "images": [
+                {
+                  "url": "https://place-puppy.com/660x304",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/650x305",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/670x306",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/680x307",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/690x307",
+                  "description": "Puppy"
+                }
+              ]
+            },
+            {
+              "type": "image-static",
+              "image": {
+                "url": "https://place-puppy.com/710x300",
+                "description": "Another happy puppy"
+              },
+              "details": {}
+            }
+          ],
+          [
+            {
+              "type": "image-static",
+              "image": {
+                "url": "https://place-puppy.com/710x300",
+                "description": "Another happy puppy"
+              },
+              "details": {}
+            },
+            {
+              "type": "image-swap",
+              "images": [
+                {
+                  "url": "https://place-puppy.com/660x304",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/650x305",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/670x306",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/680x307",
+                  "description": "Puppy"
+                },
+                {
+                  "url": "https://place-puppy.com/690x307",
+                  "description": "Puppy"
+                }
+              ]
+            },
+            {
+              "type": "video",
+              "video": {
+                "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "description": "Bunny video"
+              }
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "type": "center-text",
+      "title": "Did you know?",
+      "content": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
+    }
+  ]
+}

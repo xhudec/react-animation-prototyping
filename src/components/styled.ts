@@ -15,8 +15,11 @@ const SectionBlock = styled.section`
 `
 
 const BannerSection = styled(SectionBlock)`
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   color: ${theme.colors.white};
   background-color: ${theme.colors.black};
 `
@@ -27,7 +30,20 @@ const BannerContainer = styled.div`
 `
 
 const Heading1 = styled.h1`
+  margin-bottom: 24px;
+
   font-size: 3rem;
+`
+
+const Heading2 = styled.h2`
+  margin-bottom: 16px;
+
+  font-size: 3rem;
+`
+
+const Paragraph = styled.p`
+  font-size: 1.25rem;
+  line-height: 1.5;
 `
 
 const DemoSection = styled(SectionBlock)`
@@ -40,6 +56,13 @@ const DemoSection = styled(SectionBlock)`
     grid-gap: 32px;
     place-content: center;
   }
+`
+
+const CenterTextSection = styled(SectionBlock)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const RelativeDemoSection = styled(DemoSection)`
@@ -57,12 +80,7 @@ const DemoColumns = styled.div`
   gap: 16px;
 `
 
-const FirstColumn = styled(DemoColumns)`
-  flex: 1;
-  flex-direction: column;
-`
-
-const SecondColumn = styled(DemoColumns)`
+const Column = styled(DemoColumns)`
   flex: 1;
   flex-direction: column;
 `
@@ -79,10 +97,6 @@ const Box = styled.div`
   width: 100%;
 `
 
-const Heading2 = styled.h2`
-  font-size: 3rem;
-`
-
 export {
   PageContainer,
   PageContent,
@@ -90,12 +104,13 @@ export {
   BannerSection,
   BannerContainer,
   Heading1,
-  DemoSection,
   Heading2,
-  DemoColumns,
-  FirstColumn,
-  SecondColumn,
+  Paragraph,
+  DemoSection,
+  CenterTextSection,
   SectionTextContent,
+  DemoColumns,
+  Column,
   Box,
   ParallaxContainer,
   RelativeDemoSection,

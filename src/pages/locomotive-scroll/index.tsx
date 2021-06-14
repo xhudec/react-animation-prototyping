@@ -11,8 +11,7 @@ import {
   Box,
   DemoColumns,
   DemoSection,
-  FirstColumn,
-  SecondColumn,
+  Column,
   Heading1,
   Heading2,
   PageContainer,
@@ -118,11 +117,17 @@ const LocomotiveScrollPage: FC = () => {
               <Heading2 data-scroll data-scroll-speed="4">
                 First Section Heading
               </Heading2>
-              <AnimatedCounter data-scroll data-scroll-id="first" from={100} to={300} duration={3} />
+              <AnimatedCounter
+                data-scroll
+                data-scroll-id="first"
+                from={100}
+                to={300}
+                duration={3}
+              />
             </SectionTextContent>
 
             <DemoColumns>
-              <FirstColumn data-scroll data-scroll-speed="8">
+              <Column data-scroll data-scroll-speed="8">
                 <Box>
                   <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
                 </Box>
@@ -132,9 +137,9 @@ const LocomotiveScrollPage: FC = () => {
                 <Box>
                   <AnimatedImageSwap imgSources={imgsChunk2} swapDelay={4333} />
                 </Box>
-              </FirstColumn>
+              </Column>
 
-              <SecondColumn data-scroll data-scroll-speed="12">
+              <Column data-scroll data-scroll-speed="12">
                 <Box>
                   <AnimatedImageSwap imgSources={imgsChunk3} swapDelay={6333} />
                 </Box>
@@ -144,13 +149,13 @@ const LocomotiveScrollPage: FC = () => {
                 <Box>
                   <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" />
                 </Box>
-              </SecondColumn>
+              </Column>
             </DemoColumns>
           </DemoSection>
 
           <DemoSection data-scroll-section>
             <DemoColumns>
-              <FirstColumn data-scroll data-scroll-speed="6">
+              <Column data-scroll data-scroll-speed="6">
                 <Box>
                   <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" />
                 </Box>
@@ -160,9 +165,9 @@ const LocomotiveScrollPage: FC = () => {
                 <Box>
                   <AnimatedImageSwap imgSources={imgsChunk2} swapDelay={4333} />
                 </Box>
-              </FirstColumn>
+              </Column>
 
-              <SecondColumn data-scroll>
+              <Column data-scroll>
                 <Box>
                   <AnimatedImageSwap imgSources={imgsChunk3} swapDelay={6333} />
                 </Box>
@@ -172,14 +177,20 @@ const LocomotiveScrollPage: FC = () => {
                 <Box>
                   <Video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" />
                 </Box>
-              </SecondColumn>
+              </Column>
             </DemoColumns>
 
             <SectionTextContent>
               <Heading2 data-scroll data-scroll-speed="2">
                 Second Section Heading
               </Heading2>
-              <AnimatedCounter data-scroll data-scroll-id="second" from={5000} to={9750} duration={3} />
+              <AnimatedCounter
+                data-scroll
+                data-scroll-id="second"
+                from={5000}
+                to={9750}
+                duration={3}
+              />
             </SectionTextContent>
           </DemoSection>
 
