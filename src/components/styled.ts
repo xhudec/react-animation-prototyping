@@ -48,6 +48,10 @@ const RelativeDemoSection = styled(DemoSection)`
   overflow: hidden;
 `
 
+const SectionTextContent = styled.div`
+  place-self: center;
+`
+
 const DemoColumns = styled.div`
   display: flex;
   gap: 16px;
@@ -77,7 +81,6 @@ const Box = styled.div`
 
 const Heading2 = styled.h2`
   font-size: 3rem;
-  place-self: center;
 `
 
 export {
@@ -92,6 +95,7 @@ export {
   DemoColumns,
   FirstColumn,
   SecondColumn,
+  SectionTextContent,
   Box,
   ParallaxContainer,
   RelativeDemoSection,
